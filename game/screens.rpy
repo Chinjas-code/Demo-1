@@ -292,6 +292,8 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
+        yoffset 100
+
         xpos gui.navigation_xpos
         yalign 0.5
 
@@ -299,7 +301,7 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Comenzar") action Start()
+            textbutton _("Comenzar") action Start() xoffset 20
 
         else:
 
@@ -307,9 +309,9 @@ screen navigation():
 
             textbutton _("Guardar") action ShowMenu("save")
 
-        textbutton _("Cargar") action ShowMenu("load")
+        textbutton _("Cargar") action ShowMenu("load") xoffset 20
 
-        textbutton _("Opciones") action ShowMenu("preferences")
+        textbutton _("Opciones") action ShowMenu("preferences") xoffset 20
 
         if _in_replay:
 
@@ -319,18 +321,18 @@ screen navigation():
 
             textbutton _("Menú principal") action MainMenu()
 
-        textbutton _("Acerca de") action ShowMenu("about")
+        textbutton _("Acerca de") action ShowMenu("about") xoffset 20
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## La ayuda no es necesaria ni relevante en dispositivos móviles.
-            textbutton _("Ayuda") action ShowMenu("help")
+            textbutton _("Ayuda") action ShowMenu("help") xoffset 20
 
         if renpy.variant("pc"):
 
             ## El botón de salida está prohibido en iOS y no es necesario en
             ## Android y Web.
-            textbutton _("Salir") action Quit(confirm=not main_menu)
+            textbutton _("Salir") action Quit(confirm=not main_menu) xoffset 20
 
 
 style navigation_button is gui_button

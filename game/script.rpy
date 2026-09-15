@@ -2,6 +2,7 @@
 
 # Alchile que organicen bien el codigo porque si hacemos un asco l o s m a t o - Chinjas
 
+image main_menuvid = Movie(play="images/bg/main_menuvid.webm", loop=True)
 
 label start:
 

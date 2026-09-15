@@ -87,7 +87,7 @@ define gui.title_text_size = 75
 ## Menú principal y menús del juego ############################################
 
 ## Imágenes del menú principal y menús del juego.
-define gui.main_menu_background = "gui/main_menu.png"
+define gui.main_menu_background = "main_menuvid"
 define gui.game_menu_background = "gui/game_menu.png"
 
 
@@ -483,3 +483,11 @@ init python:
 
         gui.nvl_button_width = 1860
         gui.nvl_button_xpos = 30
+
+
+style navigation_button_text:
+    font "fonts/navigation_font.ttf"
+    size 40
+    idle_color "#ffffff"
+    hover_color "#83ddf5"
+    outlines [ (2, "#000000", 0, 0) ]
