@@ -36,39 +36,36 @@ label start:
 
     $ thought_color = "#8ecae6"
 
-    "{color=[thought_color]}\"Yo sé que esto no es normal.\"{/color}"
-    "{color=[thought_color]}\"Lo sé.\"{/color}"
+    "{color=[thought_color]}\"Yo sé que esta situación no es normal.\"{/color}"
+    "{color=[thought_color]}\"Lo sé muy bien.\"{/color}"
     "{color=[thought_color]}\"Y sé que incluso ella tampoco lo es.\"{/color}"
+    "{color=[thought_color]}\"No tiene ningún sentido la forma que interactua conmigo cuando pide helados.\"{/color}"
 
     "El MC decidió mirar a su alrededor."
 
-    "Ni siquiera un apagón debería hacer que un lugar se sintiera así."
+    "Ni siquiera un apagón debería hacer que un lugar se sintiera así de abrumador, era una un ambiente muy pesado."
 
     "{color=[thought_color]}\"Esto da maldito miedo.\"{/color}"
-    "{color=[thought_color]}\"Tengo que salir de aquí. No necesito nada más.\"{/color}"
+    "{color=[thought_color]}\"Tengo que salir de aquí. No quiero ver como todo se desaparece de nuevo.\"{/color}"
 
-    "El MC regresó rápidamente hacia el puesto de helados."
+    "Decides regresar rápidamente hacia el puesto de helados por tus cosas."
 
     scene bg2
 
-    "Al entrar nuevamente a la tienda, algo llamó su atención."
+    "Al entrar nuevamente a la tienda, algo llamó tu atención."
 
-    "Sobre el mostrador continuaba el celular antiguo que el cliente había olvidado."
+    "Sobre el mostrador continuaba el celular antiguo que un cliente había olvidado."
 
-    "El mismo teléfono que nadie parecía reclamar."
+    "El mismo teléfono que nadie parecía reclamar, bastante extraño."
 
-    "El MC permaneció observándolo durante unos segundos."
+    "Permaneces observándolo durante unos segundos."
 
-    "Había algo extraño en él."
-
-    "No sabía exactamente qué."
-
-    "Pero tampoco podía ignorar la sensación de que ese objeto no debería estar ahí."
+    "No sabía exactamente para que pero te podria resultar util."
 
     "{color=[thought_color]}\"¿Por qué sigue aquí?\"{/color}"
-    "{color=[thought_color]}\"¿Y por qué nadie ha venido a buscarlo?\"{/color}"
+    "{color=[thought_color]}\"¿Y por qué nadie ha venido a buscarlo? Aunque tampoco me extraña viendo lo feo que es\"{/color}"
 
-    "El MC se acercó lentamente al mostrador."
+    "Te acercas lentamente al mostrador."
 
     scene bgcelular
 
@@ -93,17 +90,17 @@ label start:
 label tomar_celular:
 
     # SPRITE: MC tomando el celular
-    # BG: mostrador de la tienda
+    # BG: mostrador de la tienda creo que seria el bg2
 
-    "El MC tomó el teléfono."
+    "Tomas el teléfono."
 
     "{color=[thought_color]}\"Probablemente tenga algún uso.\"{/color}"
     "{color=[thought_color]}\"Será mejor tener esto que no tener nada.\"{/color}"
 
-    "Observó el dispositivo durante unos segundos."
+    "Observaste el dispositivo durante unos segundos."
 
     "{color=[thought_color]}\"Es demasiado raro que todavía no encuentre el mío.\"{/color}"
-    "{color=[thought_color]}\"Ni siquiera sé dónde podría estar.\"{/color}"
+    "{color=[thought_color]}\"Ni siquiera sé dónde podría estar, tal vez la gerente realmente se lo llevo.\"{/color}"
 
     # SFX: vibración del celular
 
@@ -111,11 +108,11 @@ label tomar_celular:
 
     # SPRITE: MC sorprendido / alerta
 
-    "El MC se quedó inmóvil."
+    "Te quedas inmóvil."
 
     "{color=[thought_color]}\"...¿Qué?\"{/color}"
 
-    "Observó la pantalla."
+    "Observaste la pantalla."
 
     "No había ninguna notificación visible."
 
@@ -125,27 +122,27 @@ label tomar_celular:
 
     "Entonces volvió a vibrar."
 
-    "{color=[thought_color]}\"Esto no debería estar pasando.\"{/color}"
+    # SPRITE: MC cansado / alerta
 
-    "El MC guardó rápidamente el teléfono en su bolsillo."
+    "{color=[thought_color]}\"Mierda, cualquier cosa ya me asusta.\"{/color}"
+
+    "Te guardas rápidamente el teléfono en tu bolsillo."
 
     "{color=[thought_color]}\"Me voy.\"{/color}"
-    "{color=[thought_color]}\"Ya tuve suficiente por hoy.\"{/color}"
+    "{color=[thought_color]}\"Ya tuve suficiente por este turno.\"{/color}"
 
 
     # ========================================================
     # SALIDA DE LA TIENDA
     # ========================================================
 
-    # BG: plaza después del apagón
+    # BG: plaza después del apagón, un pasillo
 
-    "El MC caminó rápidamente hacia la salida ubicada al otro extremo de la plaza."
+    "Te dirigiste rápidamente hacia la salida ubicada al otro extremo de la plaza."
 
     "Cada paso se sentía más pesado que el anterior."
 
-    "No sabía por qué."
-
-    "Simplemente quería salir de ahí."
+    "No sabía por qué, el cansancio debe estar afectandote."
 
     # SFX: vibración del celular
 
@@ -153,11 +150,10 @@ label tomar_celular:
 
     "{color=[thought_color]}\"¿Qué se supone que le pasa a esto?\"{/color}"
 
-    "El MC sacó el teléfono de su bolsillo."
+    "Te sacaste el teléfono de tu bolsillo."
 
     "Una notificación apareció en la pantalla."
-
-
+    
     # ========================================================
     # NOTIFICACIÓN
     # ========================================================
@@ -170,42 +166,39 @@ label tomar_celular:
 
     mc "¿Qué?"
 
-    "El MC levantó lentamente la mirada."
+    "Te levantaste lentamente la mirada."
 
-    "Frente a él, a pocos metros de distancia, se encontraba la puerta de salida."
+    "Frente a ti, a pocos metros de distancia, se encontraba la puerta de salida."
 
-    "Sin embargo, algo se movía en medio de ella."
+    "Sin embargo, algo se movía en medio de alrededor tuyo."
 
-    "La poca luz que quedaba permitía distinguir una forma imposible."
+    "La poca luz que quedaba permitía distinguir algo que no logras entender."
 
-    "Parecía una rueda de automóvil girando lentamente."
+    #TODO Aqui quisiera intentar un efecto donde se quita el fondo que este ahora mismo puesto como un parpadeo ya que siento que podria ser util,
+    # Basicamente seria como una transicion digamos que en bg1 esta todo normal pero se parpadea y ahora sale el infectado con efecto de estatica en ese mismo BG
+
+    #BG de pasillo con infectado con efecto de distorsion y estatica, si se puede
+    #ya veremos si sabemos animar los bg
+    "Parecía una rueda de automóvil girando lentamente y retorciendose."
 
     "Un espiral."
 
-    "Una masa retorcida que se estrangulaba sobre sí misma."
+    "Una masa retorcida que se estrangulaba sobre sí misma para avanzar."
 
     "El movimiento no tenía sentido."
-
-    "No parecía pertenecer a ninguna forma de vida conocida."
 
     "Tal vez un vórtice de carne sería la única manera de describirlo."
 
     # SPRITE: MC perturbado
 
-    "El MC permaneció inmóvil."
+    "Permaneciste inmóvil ante semejante vista."
 
     "{color=[thought_color]}\"No.\"{/color}"
     "{color=[thought_color]}\"No, no, no.\"{/color}"
 
-    "La forma continuaba moviéndose."
+    "La forma continuaba moviéndose hacia ti."
 
-    "El MC sintió que algo dentro de él reconocía aquella presencia."
-
-    "Algo familiar."
-
-    "O peor."
-
-    "Algo que no quería volver a ver."
+    "Te sentiste que algo dentro de ti reconocía aquella presencia como alguien que llegaste a ver."
 
     # IMAGE: infectado bloqueando la salida
     # BG: salida de la plaza
@@ -215,12 +208,12 @@ label tomar_celular:
     # LA PLAZA
     # ========================================================
 
-    "El MC retrocedió rápidamente."
+    "Te retrocediste rápidamente."
 
     "{color=[thought_color]}\"No voy a acercarme a eso.\"{/color}"
     "{color=[thought_color]}\"Ni de puta casualidad.\"{/color}"
 
-    "Decidió regresar hacia el puesto de helados."
+    "Decidiste regresar hacia el puesto de helados."
 
     "Sin embargo, algo había cambiado."
 
@@ -234,7 +227,7 @@ label tomar_celular:
 
     "Tres."
 
-    "El MC miró hacia los distintos corredores."
+    "Miraste hacia los distintos corredores."
 
     "No podía distinguir exactamente qué eran."
 
@@ -244,21 +237,21 @@ label tomar_celular:
 
     "Girando."
 
-    "Desplazándose lentamente."
+    "Desplazándose lentamente por todos lados."
 
     # SPRITE: MC completamente espantado
 
-    "El MC estaba completamente espantado."
+    "Estabas completamente espantado."
 
-    "Había visto algo."
+    "Sin comprension de tu alrededor."
 
-    "Algo que no debería existir."
-
-    "Y ahora no sabía si realmente estaba solo."
-
-    "{color=[thought_color]}\"¿Qué carajo está pasando aquí?\"{/color}"
+    "{color=[thought_color]}\"¿Que mierda esta pasando?\"{/color}"
 
     # EFFECT: ligera distorsión de pantalla
+    #BG de puesto de helados
+
+    "terminaste llegando a tu puesto de helados y rapidamente cerraste la puerta."
+
     # SFX: vibración del celular
 
     "El teléfono volvió a vibrar."
@@ -274,18 +267,18 @@ label tomar_celular:
 
 label dejar_celular:
 
-    # SPRITE: MC observando el celular
-    # BG: mostrador
+    # SPRITE: MC Neutral
+    # BG: mostrador con celular
 
-    "El MC observó el teléfono durante unos segundos más."
+    "Observaste el teléfono durante unos segundos más."
 
     "Después apartó la mirada."
 
-    mc "Y una mierda."
+  "{color=[thought_color]}\"Mejor no tocar esa mierda.\"{/color}"
 
-    "Decidió no tocarlo."
+    "Decidiste no tocarlo."
 
-    "No quería involucrarse con algo que claramente no comprendía."
+    "No era tu problema ni era tuyo."
 
     "{color=[thought_color]}\"Seguro alguien va a venir por él.\"{/color}"
     "{color=[thought_color]}\"Y si no, tampoco es mi problema.\"{/color}"
