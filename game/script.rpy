@@ -278,12 +278,10 @@ label dejar_celular:
 
     "Decidiste no tocarlo."
 
-    "No era tu problema ni era tuyo."
-
     "{color=[thought_color]}\"Seguro alguien va a venir por él.\"{/color}"
-    "{color=[thought_color]}\"Y si no, tampoco es mi problema.\"{/color}"
+    "{color=[thought_color]}\"Y si no, supongo al rato puedo hacer algo mas.\"{/color}"
 
-    "El MC salió rápidamente de la tienda."
+    "Sales rápidamente de la tienda."
 
 
     # ========================================================
