@@ -2,22 +2,21 @@
 # Alchile que organicen bien el codigo porque si hacemos un asco l o s m a t o - Chinjas
 
 
-#### Ahora mismo no esta completo esto, es jugable al menos en texto pero me pondre a trabajar en: 
-#### no.1 Mis dialogos los re hare todos uno por uno porque esta bien pinche robotico todo
-#### no.2 Hay dialogos extras que no eran, los voy a borrar y hacer legible
+#### ACTUALIZACION del dia 16/09/26
+#### Raza ya me lei todos los dialogos y segun yo ya deje todos legibles borre las cosas extra y las puse con mas sentido y menos robotico, no creo haber señalado bien
+#### todas las cosas que debemos poner como bg o como cosas como las imagenes de los personajes ya conforme vaya haciendo esto y poniendo tambien efectos de sonido
+#### los ire poniendo bien bien, ahora mismo lo que se tiene que hacer es ir poniendo bien el juego y el juego si funciona ahora mismo como esta solamente hay que poner que 
+#### se vea bien y por lo mientras tendriamos algo medio jugable
+
+#### Texto anterior importante:
+#### Ahora mismo no esta completo esto, es jugable al menos en texto 
 #### Revisen donde dice RECURSOS ahi esta puesto las rutas de las imagenes y del fondo, el script y si hago otro en el futuro seran puro codigo de la historia
 #### si necesitan definir algo o por ejemplo el codigo del algoritmo haganlo en otro archivo, el inventario lo usaremos en el capitulo 2 de esta demo
-#### no.3 me falta los efectos de sonido y imagenes, hare luego una lista con las imagenes especificas
-#### la neta que no tengo ahora mismo cerebro porque tengo sueño pero mañana hago esto mas ordenado como dije o si leen esto mañana pos cuando esto este eliminado es q ya lo complete
-#### La logica matematica lo hare cuando termine esto, porque si continuo la historia al final no usare la IA de los infectados que sera una parte esencial del juego final
-#### Att. Chinjas
-
-
 
 
 # ============================================================
 # CAPÍTULO 1 - Desiciones del jugador con la asimlacion
- ============================================================
+#============================================================
 
 label start:
 
@@ -274,7 +273,7 @@ label dejar_celular:
 
     "Después apartó la mirada."
 
-  "{color=[thought_color]}\"Mejor no tocar esa mierda.\"{/color}"
+    "{color=[thought_color]}\"Mejor no tocar esa mierda.\"{/color}"
 
     "Decidiste no tocarlo."
 
@@ -290,33 +289,22 @@ label dejar_celular:
 
     # BG: plaza después del apagón
 
-    "El MC caminó hacia la salida al otro extremo de la plaza."
+    "Caminaste hacia la salida al otro extremo de la plaza."
 
     "Cada paso se sentía pesado y cansado."
-
-    "Sin embargo, todavía era una sensación tolerable."
-
-    "Podía caminar."
-
-    "Podía pensar."
-
-    "Por el momento."
 
     # EFFECT: luces parpadeando
 
     "Las luces comenzaron a parpadear con mayor frecuencia."
 
+    #MC pensandte
+
     "{color=[thought_color]}\"Aunque no me hubiera venido mal intentar llamar con ese celular.\"{/color}"
 
-    "El MC continuó caminando."
-
-    "Entonces ocurrió."
-
     # SFX: apagón
+    #Efecto de parpadeo 
 
     "Todas las luces de la plaza se apagaron al mismo tiempo."
-
-    "Un apagón absoluto."
 
     mc "Mierda."
 
@@ -326,30 +314,27 @@ label dejar_celular:
 
     # SFX: sonido de masa retorciéndose
 
-    "Entonces escuchó un sonido."
-
-    "Algo parecido a nudos retorciéndose."
+    "Entonces escuchó un sonido de algo parecido a nudos retorciéndose."
 
     "Como si una masa enorme se moviera lentamente en la oscuridad."
 
     "El sonido provenía de algún lugar cercano."
-
-    "Muy cercano."
-
 
     # ========================================================
     # EL INFECTADO 1
     # ========================================================
 
     # SPRITE: INFECTADO 1
-    # BG: plaza completamente oscura
-    # EFFECT: pantalla oscura
+    # BG: plaza completamente oscura con poca luz
+    # EFFECT: pantalla oscura leve estatica
+
+    #infectado 1 base no glitch
 
     infectado1 "Buenas noches."
 
     infectado1 "Es tarde para que se encuentre en este lugar."
 
-    "El MC se sobresaltó."
+    "Te espanto"
 
     mc "Buenas noches."
 
@@ -361,15 +346,9 @@ label dejar_celular:
 
     "Extremadamente incómodo."
 
-    "Hablar con alguien en medio de una plaza completamente a oscuras."
+    "Hablar con alguien en medio de una plaza completamente a oscuras. ¿Que sentido tiene?"
 
     "Pero había algo más."
-
-    "La voz parecía incorrecta."
-
-    "No por lo que decía."
-
-    "Sino por cómo lo decía."
 
     infectado1 "Buenas noches."
 
@@ -389,7 +368,8 @@ label dejar_celular:
 
     "La voz permaneció en silencio durante unos segundos."
 
-    # EFFECT: distorsión de voz
+    # EFFECT: distorsión 
+    #Infectado1 modiicado con cabeza alargada
 
     infectado1 "Buenas noches..."
 
@@ -399,7 +379,7 @@ label dejar_celular:
 
     infectado1 "¿Por qué no encuentra uno de chocolate?"
 
-    "El MC permaneció inmóvil."
+    "Te quedas inmóvil."
 
     "Las palabras no tenían sentido."
 
@@ -436,31 +416,22 @@ label dejar_celular:
 
 label ruta_b1_regresar:
 
-    "El MC decidió regresar."
+    "Sin pensarlo dos veces, comienzas a caminar en dirección al puesto de helados."
 
-    "Sin pensarlo dos veces, comenzó a caminar en dirección al puesto de helados."
-
-    "No quería seguir ahí."
-
-    "No quería escuchar más aquella voz."
+    "No querías seguir ahí."
 
     "La memoria muscular funcionó antes que el pensamiento."
 
-    "Sus piernas comenzaron a moverse rápidamente."
+    "Tus piernas comenzaron a moverse rápidamente."
 
-    # SFX: masa retorciéndose, aumentando
+    # SFX: masa retorciéndose
+    #BG de MC Huyendo de infectado 1 en medio de la plaza medio apagada, la cabeza debe estar por arriba con el cuello por todos lados
 
-    "Mientras avanzaba, el sonido de la masa retorciéndose aumentó."
+    "Mientras avanzabas, el sonido de la masa retorciéndose aumentó."
 
-    "Un poco más fuerte."
+    "Un poco más fuerte y mas fuerte"
 
-    "Un poco más cerca."
-
-    "Un poco más arriba."
-
-    "Hasta que el MC comprendió que aquello no estaba lejos."
-
-    "Estaba siguiéndolo."
+    "Te esta siguiendo"
 
     infectado1 "Buenos días."
 
@@ -468,59 +439,43 @@ label ruta_b1_regresar:
 
     infectado1 "¿Por qué es tarde?"
 
-    "El MC aceleró el paso."
-
     "{color=[thought_color]}\"No voltees.\"{/color}"
     "{color=[thought_color]}\"No voltees.\"{/color}"
-    "{color=[thought_color]}\"Solo sigue caminando.\"{/color}"
+    "{color=[thought_color]}\"Solo sigue corriendo.\"{/color}"
 
-    "Finalmente llegó a la tienda."
+    "Finalmente llegas a la tienda."
 
     # SFX: puerta cerrándose
+    #BG de tienda de helados con MC agitado
 
-    "Entró y cerró la puerta de golpe."
+    "Entra y cierras la puerta de golpe."
 
-    "Permaneció apoyado contra ella, completamente agitado."
-
-    "Su respiración era irregular."
-
-    "Necesitaba unos segundos para recuperar el control."
+    "Permanes apoyado contra ella recuperando el aliento aunque estas completamente agitado."
 
     # SFX: vibración
 
-    "Entonces escuchó algo."
-
-    "Una vibración."
+    mc "Una vibración?"
 
     "Provenía del interior del local."
 
-    "El sonido venía del bote de basura."
+    "El sonido venía del interior de la tienda."
 
     "El MC volteó lentamente."
 
-    # SPRITE: MC perturbado
-    # IMAGE: bote de basura / celular
+    "El celular estaba vibrando constantemente."
 
-    "El celular estaba vibrando dentro de la basura."
+        # SPRITE: MC perturbado
 
-    "{color=[thought_color]}\"...Yo no lo puse ahí.\"{/color}"
+    "{color=[thought_color]}\"¿Asimilacion?\"{/color}"
 
 
     # ========================================================
     # NOTIFICACIÓN
     # ========================================================
 
-    # IMAGE: celular con notificación
+    # IMAGE: celular con % de asimilacion
 
     "{b}ASIMILACIÓN: 50%%{/b}"
-
-    "El MC observó la pantalla."
-
-    "No había tocado el teléfono."
-
-    "No lo había tomado."
-
-    "Ni siquiera sabía cómo había terminado dentro del bote de basura."
 
     # SFX: vibración continua
 
@@ -537,17 +492,19 @@ label ruta_b1_regresar:
 
 label ruta_b2_dialogar:
 
-    "El MC decidió no moverse."
+    #sfx masa retorciendose 
 
-    "No porque quisiera quedarse."
+    "Decides no moverse."
 
-    "Sino porque no sabía qué otra cosa hacer."
+    "No tenias otra idea de qué otra cosa hacer."
 
     mc "¿Disculpe?"
 
     "La voz permaneció en silencio."
 
     "El sonido de algo retorciéndose continuaba alrededor."
+    
+    #infectado1 neutral
 
     infectado1 "Buenas noches."
 
@@ -564,7 +521,7 @@ label ruta_b2_dialogar:
     infectado1 "Es tarde para que se encuentre en este lugar."
 
     "{color=[thought_color]}\"Está repitiendo lo mismo.\"{/color}"
-    "{color=[thought_color]}\"¿Por qué?\"{/color}"
+    "{color=[thought_color]}\"¿Esta menso?\"{/color}"
 
     infectado1 "¿Usted trabaja aquí?"
 
@@ -574,7 +531,7 @@ label ruta_b2_dialogar:
 
     infectado1 "¿Uno de chocolate?"
 
-    "El MC tragó saliva."
+    "Tragas saliva, algo no te gusta."
 
     mc "No."
 
@@ -586,9 +543,9 @@ label ruta_b2_dialogar:
 
     # SFX: golpe suave contra una pared
 
-    "Entonces algo golpeó suavemente una pared cercana."
+    "Entonces algo golpeó por todos lados"
 
-    mc "¿Señora?"
+    mc "¿Hola?"
 
     infectado1 "Buenas noches."
 
@@ -604,8 +561,8 @@ label ruta_b2_dialogar:
 
     # EFFECT: distorsión
 
-    "{color=[thought_color]}\"No quiero seguir hablando.\"{/color}"
-    "{color=[thought_color]}\"Pero tampoco quiero darle la espalda.\"{/color}"
+    "{color=[thought_color]}\"No quiero estar mas aqui\"{/color}"
+    "{color=[thought_color]}\"Pero si le doy la espalda...\"{/color}"
 
 
     # ========================================================
@@ -634,9 +591,7 @@ label ruta_b2_dialogar:
 
 label ruta_b2_a:
 
-    "El MC decidió regresar."
-
-    "Sin pensarlo demasiado, comenzó a caminar hacia el puesto de helados."
+    "Decides regresar sin pensarlo mucho y caminar."
 
     "La voz continuaba detrás de él."
 
@@ -647,26 +602,23 @@ label ruta_b2_a:
     infectado1 "Buenas noches."
 
     # SFX: masa retorciéndose aumentando
+    #   BG de MC Huyendo de infectado 1 en medio de la plaza medio apagada, la cabeza debe estar por arriba con el cuello por todos lados
 
-    "El sonido de la masa retorciéndose aumentó."
+    "Caminar? Decides correr por tu vida "
+    
+    "Sientes que todo alrededor tuyo hay algo moviendose "
 
-    "El MC comenzó a caminar más rápido."
+    "Al llegar a la tienda, cierras la puerta de golpe."
 
-    "Después a correr."
-
-    "No quería escuchar nada más."
-
-    "Al llegar a la tienda, cerró la puerta de golpe."
-
-    "Permaneció inmóvil durante unos segundos."
+    "Permaneces completamnete perrturbado y agitado."
 
     # SFX: vibración
 
     "Entonces escuchó una vibración."
 
-    "El celular estaba dentro del bote de basura."
+    "El celular que estaba en la tienda parece que recibio algo."
 
-    "El MC se acercó lentamente."
+    "Aun con miedo, decides acercarte lentamente al teléfono."
 
 
     # ========================================================
@@ -677,16 +629,16 @@ label ruta_b2_a:
 
     "{b}ASIMILACIÓN: 50%%{/b}"
 
-    "El MC observó el teléfono."
+    #Mc Viendo el celular 
 
-    "No entendía cómo había llegado ahí."
+    "El MC observó el teléfono."
 
     "La pantalla mostraba una notificación nueva."
 
     "{b}ASIMILACIÓN: 50%{/b}"
 
     "{color=[thought_color]}\"¿Qué significa esto?\"{/color}"
-    "{color=[thought_color]}\"¿Por qué está aumentando?\"{/color}"
+    "{color=[thought_color]}\"No, mas bien ¿Que mierda era esa persona?\"{/color}"
 
     # CORTE DE ESCENA
 
@@ -699,44 +651,41 @@ label ruta_b2_a:
 
 label ruta_b2_b:
 
-    "El MC permaneció frente a la oscuridad."
+    "Permaneces frente a la oscuridad con poca luz alrededor tuyo."
 
-    "Intentó mantener la voz estable."
+    "Intentas mantener la tranquilidad."
 
     mc "¿Usted trabaja aquí?"
 
-    "La criatura no respondió inmediatamente."
+    "..."
 
     infectado1 "Buenas noches."
 
-    mc "¿Qué está haciendo en esta plaza?"
+    mc "¿Qué está haciendo en esta plaza, trabaja aqui?"
 
-    "Silencio."
+    "..."
 
-    mc "¿Me está escuchando?"
+    mc "¿Hola?"
 
-    "El sonido alrededor comenzó a hacerse más fuerte."
+    #BG infectado 1 rodeando al MC con el cuello por todos lados
 
-    "Como si algo enorme se estuviera moviendo detrás de las paredes."
+    "El sonido alrededor comenzó a hacerse más fuerte de nudos y carne."
+
+    "Como si algo enorme se estuviera moviendo por las paredes."
 
     infectado1 "Buenas noches."
 
     infectado1 "Es tarde para que se encuentre en este lugar."
 
     "{color=[thought_color]}\"Esto no tiene sentido.\"{/color}"
-    "{color=[thought_color]}\"¿Por qué sigue diciendo lo mismo?\"{/color}"
+    "{color=[thought_color]}\"No fue buena idea hablar\"{/color}"
 
     "El MC miró hacia la oscuridad."
 
     mc "¿Quiere uno de chocolate?"
 
-    "La voz se detuvo."
-
-    "Por primera vez."
-
     "Silencio absoluto."
 
-    "Después respondió."
 
     infectado1 "Buenas noches."
 
@@ -750,15 +699,56 @@ label ruta_b2_b:
 
     infectado1 "UNO DE CHOCOLATE."
 
-    "El MC sintió que algo estaba mal."
-
-    "No sabía exactamente qué."
-
-    "Pero comprendió que había cometido un error."
+    infectado1 "UN0 D3 C'¿+´lA7E@"
 
     "{color=[thought_color]}\"No debí decir eso.\"{/color}"
 
-    "La oscuridad frente a él comenzó a moverse."
+    "Decides correr hacia la salida de la plaza sin importar nada."
+
+    "Aunque claramente no veias la salida recuerdas aproximadamente donde ir, aunque tambien"
+
+    "Hay algo moviendose por todos lados"
+
+    "{color=[thought_color]}\"Mierda, Mierda\"{/color}"
+
+    #bg tineda de helados 1 creo
+
+    "Al llegar a la salida, cierras la puerta de golpe y sigues corriendo con todas tus fuerzas"
+
+    "Pero una agradable vista de helados con un toque de vainilla indunda tu nariz"
+    
+    "Aunque en vez de tranquilizarte, te da un miedo extremo"
+
+    #MC perturbado
+
+    mc "'Que hago aqui."
+
+    # SFX: vibración
+
+    "Escuchas una vibración."
+
+    "El celular que estaba en la tienda parece que recibio algo."
+
+    "Aun con miedo, decides acercarte lentamente al teléfono."
+
+
+    # ========================================================
+    # NOTIFICACIÓN
+    # ========================================================
+
+    # IMAGE: celular con notificación
+
+    "{b}ASIMILACIÓN: 50%%{/b}"
+
+    #Mc Viendo el celular 
+
+    "La pantalla mostraba una notificación nueva."
+
+    "{b}ASIMILACIÓN: 50%{/b}"
+
+    "{color=[thought_color]}\"¿Qué significa esto?\"{/color}"
+    "{color=[thought_color]}\"No, mas bien ¿Que mierda era esa persona?\"{/color}"
+
 
     # CORTE DE ESCENA
 
@@ -771,24 +761,21 @@ label ruta_b2_b:
 
 label ruta_b2_c:
 
-    # BG: plaza oscura
-    # SPRITE: Infectado 1
+    #BG infectado 1 rodeando al MC con el cuello por todos lados
 
-    "El MC no respondió."
+    "Decides no responder."
 
-    "No hizo ningún movimiento."
-
-    "Permaneció completamente inmóvil."
+    "No hacer ningún movimiento y quedarte como estatua."
 
     "..."
 
-    "Su capacidad de pensamiento comenzó a deteriorarse."
+    "Tu capacidad de pensamiento lo notas lento."
 
-    "Se sentía mareado."
+    "Te sentias mareado."
 
     "Confundido."
 
-    "Como si su cuerpo ya no respondiera correctamente."
+    "Como si tu cuerpo ya no respondiera correctamente."
 
     "..."
 
@@ -796,34 +783,17 @@ label ruta_b2_c:
 
     infectado1 "¿Se encuentra bien?"
 
-    "El MC no respondió."
+    "Decides no responder."
 
     infectado1 "¿Necesita ayuda?"
 
     "..."
 
-    "El sonido de la plaza comenzó a desaparecer."
-
-    "Ya no podía escuchar las luces."
-
-    "Ya no podía escuchar sus propios pasos."
-
-    "Solo escuchaba la voz."
-
-    "..."
+    #Screamer de infectado 1
 
     # EFFECT: distorsión progresiva
     # EFFECT: errores visuales
-
-    "La imagen comenzó a distorsionarse."
-
-    "Los sonidos del ambiente se volvieron irreconocibles."
-
-    "La pantalla comenzó a presentar errores visuales."
-
-    "Entonces apareció un mensaje."
-
-    # IMAGE: mensaje en pantalla
+    # IMAGE: mensaje del ente el mero mero
 
     "\"¿Quién eres tú?\""
 
@@ -837,6 +807,8 @@ label ruta_b2_c:
 
     # IMAGE: Infectado ocupando pantalla
 
+    #TODO aqui tengo que ver como chingados hago el final 1 que sea un gameover dependiendo las acciones, no se como configurarlo aun pero ya que termine de poner esto bonito lo hare
+
     jump final_1_asimilacion
 
 
@@ -849,16 +821,12 @@ label tirar_celular:
     # SPRITE: MC tomando celular
     # BG: mostrador
 
-    "El MC tomó el teléfono."
-
-    "Sin pensarlo demasiado, lo arrojó dentro del bote de basura."
-
-    "Permaneció observándolo durante un instante."
+    "Tomas el teléfono y sin pensarlo demasiado, lo arrojas dentro del bote de basura."
 
     "{color=[thought_color]}\"No es lo mismo dejarlo donde estaba que tirarlo a la basura.\"{/color}"
     "{color=[thought_color]}\"...¿Verdad?\"{/color}"
 
-    "El MC comenzó a caminar hacia la salida."
+    "Te olvideas de eso y sales de la tienda."
 
 
     # ========================================================
@@ -867,78 +835,55 @@ label tirar_celular:
 
     # BG: plaza después del apagón
 
-    "El MC salió rápidamente de la tienda."
+    "sales rápidamente de la tienda."
 
-    "Cada paso se sentía más pesado que el anterior."
+    "Aunque cada paso se sentía más pesado que el anterior."
 
-    "No era cansancio."
-
-    "No exactamente."
-
-    "Era como si algo estuviera tirando de su cuerpo."
+    "Te empiezas a fatigar y a sentirte mareado"
+   
+    #MC exhausto
 
     "{color=[thought_color]}\"¿Qué está pasando?\"{/color}"
 
-    "El peso aumentó repentinamente."
+    "El peso aumentó yan repentinamente que pierdes el equilibrio."
 
-    "El MC perdió el equilibrio."
+    "Caes de rodillas sobre el suelo."
 
-    "Sus piernas cedieron."
-
-    "Cayó de rodillas sobre el suelo."
-
-    "Durante unos segundos no pudo moverse."
+    "Durante unos segundos no pudiste ni moverte."
 
     mc "¿Qué...?"
 
-    "Intentó levantarse."
-
-    "No pudo."
+    "Intentas levantarse pero no puedes"
 
     # SFX: masa triturándose
 
-    "Entonces escuchó un sonido."
-
-    "Un movimiento parecido al de una masa triturándose."
-
-    "No muy lejos de donde se encontraba."
-
-    "El miedo recorrió todo su cuerpo."
-
-    "El MC levantó lentamente la mirada."
-
+    "Entonces escuchó un sonido de algo moviendose por todos lados."
 
     # ========================================================
     # EL INFECTADO 1 APARECE
     # ========================================================
 
     # SPRITE: INFECTADO 1
-    # BG: plaza / criatura frente al MC
+    # BG: plaza / criatura frente al MC viendo directo a la cara y en el piso
     # EFFECT: cuello extendiéndose
 
-    "Una enorme cara se encontraba suspendida sobre él."
+    "Una enorme cara se encontraba suspendida sobre de ti."
 
-    "No tenía pupilas."
+    "No tenía ojos normales"
 
-    "No parecía tener una expresión humana."
+    "Y parece que algo que solo con error puede describir la cara de la creatura."
 
     "Su cuello se extendía por todo el pasillo."
 
     "Giraba sobre sí mismo."
 
-    "Se expandía."
+    "Se expandía, se contraia y se hacia una rueda misma con nudos por todos lados."
 
-    "Desaparecía dentro de las paredes."
+    "Desaparecía dentro de las paredes y aparecia por el techo."
 
-    "Volvía a aparecer más lejos."
+    "Era imposible comprender pero un miedo tan extremo empezaba a romperte."
 
-    "Era imposible comprender cómo podía existir una estructura semejante."
-
-    "El MC sintió que algo dentro de él comenzaba a romperse."
-
-    "El horror recorrió su cuerpo."
-
-    "Entonces la criatura habló."
+    "El horror recorrió tu cuerpo."
 
     infectado1 "Buenas tardes."
 
@@ -946,17 +891,13 @@ label tirar_celular:
 
     infectado1 "Quiero hablar sobre los horarios de apertura para la siguiente semana."
 
-    "El MC no podía procesar lo que estaba escuchando."
+    "No podías procesar lo que te estaba diciendo."
 
-    "La criatura estaba frente a él."
-
-    "Algo completamente imposible."
-
-    "Y estaba hablando sobre horarios laborales."
+    "Una cosa con cuello infinio te estaba hablando sobre horarios laborales?"
 
     "{color=[thought_color]}\"¿Qué mierda?\"{/color}"
     "{color=[thought_color]}\"¿Qué estoy viendo?\"{/color}"
-    "{color=[thought_color]}\"¿Por qué está hablando como si esto fuera normal?\"{/color}"
+    "{color=[thought_color]}\"¿Por qué está hablando como si fuera normall?\"{/color}"
 
     "La criatura inclinó ligeramente la cabeza."
 
@@ -991,45 +932,37 @@ label tirar_celular:
 
 label ruta_c1_correr:
 
-    "Con las pocas fuerzas que le quedaban, el MC corrió hacia la puerta que tenía enfrente."
+    "Con las pocas fuerzas que te quedaban, corres hacia la puerta que tenía enfrente."
 
-    "No miró hacia otro lado."
+    "No miras hacia otro lado."
 
-    "No le importaba el dolor."
+    "No te importaba el horror ni la fatiga que te hacia arrodillar."
 
-    "No le importaba nada."
+    "No te importaba NADA."
 
-    "Solo quería alejarse de aquella presencia."
+    "Solo quería alejarte de lo que sea que estaba viendote."
 
-    "La respiración del MC se volvió desesperada."
+    "Un cansancio tan extremo te estaba atormentando."
 
-    "Detrás de él, la voz del Infectado comenzó a elevarse."
+    "Detrás de ti, la voz de la creatura comenzó a elevarse."
 
     infectado1 "¡Buenos días!"
 
     infectado1 "¡Uno de chocolate, por favor!"
 
-    "El MC llegó hasta la puerta."
+    #sfx puerta cerrandose
 
-    # SFX: puerta abriéndose
-
-    "La abrió."
-
-    "Entró."
-
-    # SFX: puerta cerrándose
-
-    "Y la cerró inmediatamente."
+    "Llegas a la puerta la abrez y azotas detras de ti"
 
 
     # ========================================================
     # REGRESO A LA TIENDA
     # ========================================================
 
-    # BG: tienda de helados
-    # SPRITE: MC agitado
+    # BG: tienda de helados bg1
+    # SPRITE: MC agitado y perturbado alv
 
-    "Frente a él se encontraba nuevamente el familiar puesto de helados."
+    "Frente a ti se encontraba nuevamente el familiar puesto de helados."
 
     "El mostrador."
 
@@ -1039,38 +972,40 @@ label ruta_c1_correr:
 
     "Todo parecía normal."
 
-    "Demasiado normal."
+    "Demasiado normal?"
 
-    "El aroma dulce característico del lugar no logró tranquilizarlo."
+    "El aroma dulce característico del lugar no logró tranquilizarte en lo mas minimo."
 
     "Al contrario."
 
-    "Le recordó lo peor."
+    "te recordó lo poco logico que es estar aqui."
 
-    "El miedo inundó su cuerpo."
+    "El miedo inunda tu cuerpo una vez mas."
 
-    "Su respiración se volvió irregular."
+    "Tu respiración se volvió aun mas irregular."
 
-    "La hiperventilación le impedía pensar correctamente."
+    "La hiperventilación te impedía pensar correctamente."
 
     "Pasaron varios minutos."
 
-    "El MC permaneció dentro del local intentando recuperar la calma."
+    "Permaneces dentro del local intentando recuperar la calma."
 
     "{color=[thought_color]}\"Respira.\"{/color}"
     "{color=[thought_color]}\"Solo respira.\"{/color}"
-    "{color=[thought_color]}\"No estás viendo nada.\"{/color}"
-    "{color=[thought_color]}\"Solo fue una mala noche.\"{/color}"
+    "{color=[thought_color]}\"No necesitas entender ahora mismo que esta pasando\"{/color}"
+    "{color=[thought_color]}\"Solo, necesitas volver a ti.\"{/color}"
 
-    # SFX: vibración
+    # SFX: vibración 
+    #Me gustaria hacer un tipo screamer del MC con el celular, que a todos nos a espantado una mmda
+    #BG personalizado del MC horrorizado y usado para hacer un screamer basico tirado en el puesto de helados y el bote se basura con luz del celular
 
-    "Entonces escuchó un sonido."
+    "Casi te cagas del susto que te da un sonido."
 
     "Una vibración."
 
-    "El celular estaba dentro del bote de basura."
+    "El celular que estaba dentro del bote de basura."
 
-    "El MC levantó lentamente la mirada."
+    "Decides ver dentro del bote de basura y ver porque esta vibrando."
 
 
     # ========================================================
@@ -1080,8 +1015,6 @@ label ruta_c1_correr:
     # IMAGE: celular con notificación
 
     "{b}ASIMILACIÓN: 80%%{/b}"
-
-    mc "No..."
 
     # CORTE DE ESCENA
 
@@ -1094,17 +1027,17 @@ label ruta_c1_correr:
 
 label ruta_c2_dialogar:
 
-    "El MC intentó hablar."
+    "Te armas de valor y decides hablar con lo que tienes enfrente"
 
-    "Nunca había sentido un miedo semejante."
+    "Nunca habías sentido un miedo semejante de estar aquí."
 
-    "Las palabras apenas lograban salir de su boca."
+    "Las palabras apenas lograban tener coherencia"
 
     mc "B-buenas noches."
 
     mc "L-la gerente se ha ido más temprano."
 
-    "El ambiente comenzó a retorcerse."
+    "El ambiente comenzó a romperse."
 
     "No físicamente."
 
@@ -1114,6 +1047,8 @@ label ruta_c2_dialogar:
 
     "El sonido alrededor parecía distorsionarse."
 
+    "Un horror aun mas fuerte te invadio cada fibra de tu ser"
+
     "La voz del Infectado respondió."
 
     infectado1 "Buenas noches."
@@ -1122,25 +1057,25 @@ label ruta_c2_dialogar:
 
     infectado1 "Favor de decir que la siguiente semana se..."
 
-    "La frase se interrumpió."
+ 
+    # EFFECT: distorsión fuerte de voz se tiene que dar entender que lo que tiene que ver con la siguiente semana 
+    #ES UN MISTERO y no se puede decir, mencionar ni sugerir
+    #Es como silenciar al infectado
 
-    # EFFECT: distorsión fuerte de voz
 
-    "La voz se distorsionó completamente."
+    "La voz se distorsionó completamente las palabras perdieron su sonido y tus sentidos dejaron de estar conectados a ti."
 
-    "Las palabras perdieron su forma."
-
-    "Después volvió a hablar."
+    "Despues vuelves a escuchar."
 
     infectado1 "¿Se encuentra bien?"
 
     infectado1 "¿Necesita ayuda?"
 
-    "El MC permaneció inmóvil."
+    "Permaneces completamente inmóvil y sin lograr pensar."
 
-    "Desde su visión periférica comenzó a observar algo."
+    "Desde tu visión periférica comeienzas a divisar algo"
 
-    "Un cuello."
+    "Un cuello?"
 
     "Recorriendo todo el centro de la plaza."
 
@@ -1148,13 +1083,11 @@ label ruta_c2_dialogar:
 
     "Desapareciendo dentro de estructuras."
 
-    "Extendiéndose mucho más allá de lo que podía comprender."
+    "Extendiéndose mucho más allá de lo que podía comprender y haciendo nudos por todos lados."
 
-    "La cabeza del Infectado lo observaba fijamente."
+    "La cabeza del Infectado te observaba mas fijamente."
 
-    "{color=[thought_color]}\"No puede ser.\"{/color}"
-    "{color=[thought_color]}\"Eso no cabe aquí.\"{/color}"
-    "{color=[thought_color]}\"¿Cómo puede estar ahí?\"{/color}"
+    "{color=[thought_color]}\"¿Que chingados es todo esto? NO QUIERO MORIR\"{/color}"
 
     "La criatura inclinó ligeramente la cabeza."
 
@@ -1162,10 +1095,7 @@ label ruta_c2_dialogar:
 
     infectado1 "¿Necesita ayuda?"
 
-    "El MC no respondió."
-
-    "La criatura esperó."
-
+    "El miedo nubla tu juicio"
 
     # ========================================================
     # DECISIÓN POR TIEMPO
@@ -1190,39 +1120,35 @@ label ruta_c2_dialogar:
 
 label ruta_c2_a:
 
-    "Con el miedo aún peor que antes, el MC logró responder."
+    "Con todo y panico que esta en cada parte de tu cuerpo, decides responder con la verdad."
 
     mc "E-estaba buscando la salida."
 
     mc "S-solo que me tropecé un poco."
 
-    "Tragó saliva instintivamente."
+    "Tragas saliva instintivamente."
 
-    "No podía comprender qué estaba ocurriendo."
+    "Ni siquiera tu mente podia procesar lo que tu vista alcanza a ver"
 
-    "No podía encontrar una explicación lógica."
+    "Un miedo aun peor de intentar razonar lo que pasa te nubla mas"
 
-    "El Infectado permaneció observándolo."
+    "El Infectado permanece observándote."
 
-    "Durante unos segundos no dijo nada."
-
-    "Después habló."
+    "Durante unos segundos mas no dijo nada."
 
     infectado1 "Buenas noches."
 
     infectado1 "Quiero uno de chocolate sencillo, por favor."
 
-    "El MC permaneció inmóvil."
-
-    "La criatura repitió la frase."
+    "Si existiera algo que te pudiera poner peor, era eso."
 
     infectado1 "Buenas noches."
 
     infectado1 "Quiero uno de chocolate sencillo, por favor."
 
-    "El pánico aumentó."
+    "El pánico aumentó tanto que tu cuerpo termina colapsando."
 
-    "Las palabras comenzaron a distorsionarse."
+    "Las palabras que escuchas se distorsionan y escuchan dentro de tus oidos."
 
 
     # ========================================================
@@ -1243,51 +1169,68 @@ label ruta_c2_a:
 
     # EFFECT: texto ocupando toda la pantalla
     # EFFECT: interfaz desapareciendo parcialmente
+    # Tiene que transmitir un sentimiento de que fuiste abrumado por algo, para que puedan entender esto imagenen lo siguiente
+    #En tu campo visual y todo lo que logras ver imagina una cara que abarca todo lo que ves, al razonar eso escuchas la misma cosa repitiendose
+    #Si intentas tomar en serio ese ejemplo, te da un miedo existencial y eso busco transmitir aqui
 
-    "La voz dejó de sonar humana."
+    #BG corriendo del infectado 1 con el cuello por todos lados y la cabeza por arriba de la pantalla
 
-    "El MC ya no podía permanecer ahí."
+    "La voz te terminaria dejando loco."
 
-    "{color=[thought_color]}\"No.\"{/color}"
-    "{color=[thought_color]}\"No puedo seguir aquí.\"{/color}"
+    "No aguantaste mas esta situacion"
 
-    "Decidió correr hacia la salida."
+    "{color=[thought_color]}\"  NO PUEDO SEGUIR AQUI.\"{/color}"
 
-    # SFX: puerta
+    "Decides correr hacia la salida."
 
-    "Abrió la puerta."
-
-    "Y la cerró rápidamente detrás de él."
+    "Llegas a la puerta la abrez y azotas detras de ti"
 
 
     # ========================================================
     # REGRESO A LA TIENDA
     # ========================================================
 
-    # BG: tienda de helados
-    # SPRITE: MC perturbado
+    # BG: tienda de helados bg1
+    # SPRITE: MC agitado y perturbado alv
 
-    "Frente a él estaba nuevamente el puesto de helados."
+    "Frente a ti se encontraba nuevamente el familiar puesto de helados."
 
-    "El mismo lugar."
+    "El mostrador."
 
-    "El mismo aroma dulce."
+    "Las máquinas."
 
-    "El mismo mostrador."
+    "Los productos."
 
-    "Pero algo había cambiado."
+    "Todo parecía normal."
 
-    "El miedo extremo inundó su cuerpo."
+    "Demasiado normal?"
 
-    "Su respiración se volvió irregular."
+    "Aunque con tanto miedo ni siquiera logras analizar que estas en la tienda de helados y no en la salida de la plaza."
+
+    "Tu respiración se volvió aun mas irregular."
+
+    "La hiperventilación te impedía pensar correctamente."
 
     "Pasaron varios minutos."
 
-    "Entonces escuchó una vibración."
+    "Permaneces dentro del local intentando recuperar la calma."
 
-    "El celular continuaba dentro del bote de basura."
+    "{color=[thought_color]}\"Respira.\"{/color}"
+    "{color=[thought_color]}\"Solo respira.\"{/color}"
+    "{color=[thought_color]}\"No entiendo que era, no entiendo que hago aqui, no entiendo porque intento entender.\"{/color}"
+    "{color=[thought_color]}\"Solo, necesitas volver a ti.\"{/color}"
 
-    "El MC se acercó lentamente."
+    # SFX: vibración 
+    #Me gustaria hacer un tipo screamer del MC con el celular, que a todos nos a espantado una mmda
+    #BG personalizado del MC horrorizado y usado para hacer un screamer basico tirado en el puesto de helados y el bote se basura con luz del celular
+
+    "Casi te cagas del susto que te da un sonido."
+
+    "Una vibración."
+
+    "El celular que estaba dentro del bote de basura."
+
+    "Decides ver dentro del bote de basura y ver porque esta vibrando."
 
 
     # ========================================================
@@ -1296,10 +1239,7 @@ label ruta_c2_a:
 
     # IMAGE: celular con notificación
 
-    "{b}ASIMILACIÓN: 70%%{/b}"
-
-    "{color=[thought_color]}\"¿Por qué sigue aquí?\"{/color}"
-    "{color=[thought_color]}\"¿Por qué sigue aumentando?\"{/color}"
+    "{b}ASIMILACIÓN: 80%%{/b}"
 
     # CORTE DE ESCENA
 
@@ -1315,56 +1255,27 @@ label ruta_c2_b:
     # BG: plaza oscura
     # SPRITE: Infectado 1
 
-    "El MC no respondió."
+    "No respondes."
 
-    "No hizo ningún movimiento."
+    "No haces ningún movimiento."
 
-    "Permaneció completamente inmóvil."
-
-    "..."
-
-    "Su capacidad de pensamiento comenzó a deteriorarse."
-
-    "Se sentía mareado."
-
-    "Confundido."
-
-    "Como si su cuerpo ya no respondiera correctamente."
+    "Permaneces completamente inmóvil."
 
     "..."
 
-    "La criatura continuaba observándolo."
+    "Tu capacidad de pensamiento comienza a fallar."
 
-    infectado1 "¿Se encuentra bien?"
+    "La criatura continuaba observándote."
 
-    "El MC no respondió."
-
-    infectado1 "¿Necesita ayuda?"
+    infectado1 "¿Te encuentras bien?"
 
     "..."
 
-    "El sonido de la plaza comenzó a desaparecer."
-
-    "Ya no podía escuchar las luces."
-
-    "Ya no podía escuchar sus propios pasos."
-
-    "Solo escuchaba la voz."
-
-    "..."
+    #Screamer de infectado 1
 
     # EFFECT: distorsión progresiva
     # EFFECT: errores visuales
-
-    "La imagen comenzó a distorsionarse."
-
-    "Los sonidos del ambiente se volvieron irreconocibles."
-
-    "La pantalla comenzó a presentar errores visuales."
-
-    "Entonces apareció un mensaje."
-
-    # IMAGE: mensaje en pantalla
+    # IMAGE: mensaje del ente el mero mero
 
     "\"¿Quién eres tú?\""
 
@@ -1375,6 +1286,12 @@ label ruta_c2_b:
     "..."
 
     "\"Tal vez algún día logre entrar ahí también.\""
+
+    # IMAGE: Infectado ocupando pantalla
+
+    #TODO aqui tengo que ver como chingados hago el final 1 que sea un gameover dependiendo las acciones, no se como configurarlo aun pero ya que termine de poner esto bonito lo hare
+
+    jump final_1_asimilacion
 
     # IMAGE: Infectado ocupando pantalla
 
@@ -1392,10 +1309,6 @@ label final_1_asimilacion:
     # EFFECT: zoom lento
     # SFX: ambiente distorsionado
 
-    "El jugador observa directamente al Infectado."
-
-    "La criatura parece estar mirando más allá del personaje."
-
     "Parece mirar al jugador."
 
     
@@ -1403,6 +1316,11 @@ label final_1_asimilacion:
     # EFFECT: zoom lento
     # EFFECT: distorsión progresiva
     # SFX: voces repetidas
+    
+
+    #AQUI ESTA ESTO DEL FINAL NO SE COMO HACERLO PERO YA ME DARE UN TIRO JUNTO AL PROGRAMADOR DE DARLE SENTIDO A ESTO
+
+    #### voy a ver si puedo ordenar los finales en un mismo archivo para evitar hacer 1000 lineas de codigo
 
 
     # ========================================================
@@ -1410,16 +1328,13 @@ label final_1_asimilacion:
     # ========================================================
 
     # TODO:
-    # Al cerrar y volver a abrir el juego, el jugador deberá
-    # regresar directamente a este final.
-    #
+    # Al cerrar y volver a abrir el juego, no se debe llegar al menu si no a la misma imagen y que salga un boton que diga reinicio despues de unos segundos
+    # Al reiniciarlo debe estar el juego como si anda y todo nuevo
     # TODO:
-    # Implementar combinación específica de botones para
-    # reiniciar la demo.
-    #
-    # Hasta que se descubra la combinación, esta escena
-    # deberá permanecer activa.
+
+    # Hasta que no se ponga ese boton, la escena deberá permanecer activa.
 
     while True:
         pause
 
+##### no pongas mas lineas de codigo de aqui, hay que hacer nuevos archivos para continuar las cosas y ahora mismo todo esto es el capitulo 1 de la demo 1
