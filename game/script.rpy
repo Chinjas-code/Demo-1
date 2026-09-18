@@ -14,6 +14,22 @@
 #### si necesitan definir algo o por ejemplo el codigo del algoritmo haganlo en otro archivo, el inventario lo usaremos en el capitulo 2 de esta demo
 
 
+
+
+
+#### COMO FUNCIONA ESTA LOGICA DE ESTA DEMO #####
+
+# Expresión del MC = En este caso, dependiendo que PNG pongamos sera que se le reste un valor determinado de su "Sanidad".
+# Incómodo 1 −2 Algo extraño, pero tolerable.
+# Nervioso 2 −5 Percibe que algo no está bien.
+# Asustado 3 −10 Ve o escucha algo claramente anormal.
+# Aterrorizado 4 −20 Un infectado o evento amenaza su percepción.
+# Colapso 5 −30 Evento extremo o traumático.
+
+#### Lean PDF apartado de "sistemas (Apartado de IA infectados)" ahi especifico como funcionara la IA que determinara el % de amenaza del infectado que nos vaya atacar dependiendo
+#### las acciones que el jugador haga sobre esta demo.
+
+
 # ============================================================
 # CAPÍTULO 1 - Desiciones del jugador con la asimlacion
 #============================================================
@@ -21,6 +37,15 @@
 label start:
 
     scene bg1
+
+    #### PRUEBAS ELIMINAR DE AQUI
+    show mc_aterrorizado at left
+    show mc_colapso at right
+
+
+
+
+    #### A AQUI
 
     "La noche había caído."
 
