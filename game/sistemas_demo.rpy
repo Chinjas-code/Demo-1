@@ -7,9 +7,23 @@ default asimilacion = 0 # Asimilación: Qué tan Asimilado está con la anomalí
 default sanidad = 100 # Sanidad: Qué tan afectado mentalmente está, solo disminuye en esta demo. Importante despues tendra la funcion de recuperarse de una uh otra manera, ahora mismo ayuda a determinar el nivel de Amenaza + depende la expresion que tenga el mc en la tabla que puse en script. (mas abajo esta su propio apartado)
       
 
+# "asimilacion" ya se usa en 3 lugares: la notificacion del celular en cada ruta del capitulo 1 (le pone el valor:
+# 10%, 50% u 80%), la funcion calcular_amenaza() de aqui abajo y el Nokia (sistemas/telefono_nokia.rpy), que se
+# va corrompiendo (glitch) mientras mas alta este.
+# TODO: "normalidad" no baja en ninguna parte, hay que decidir que respuestas del jugador la bajan (ver PDF).
+
 init python:
 
-    import random
+    # Sube o baja la asimilacion (0 a 100). Ej: $ change_terror(20)  /  $ change_terror(-5)
+    # (el nombre viene del sistema de inventario del companero, se dejo igual para no romper sus ejemplos)
+    def change_terror(amount):
+
+        global asimilacion
+
+        asimilacion = max(0, min(100, asimilacion + amount))
+
+        renpy.restart_interaction()
+
 
     def calcular_amenaza():
 
@@ -30,7 +44,9 @@ init python:
     def infectado_decide_atacar():
 
         probabilidad = calcular_amenaza()
-        dado = random.randint(1, 100)
+
+        # renpy.random en vez de random para que el resultado sea igual al volver atras (rollback) o cargar partida
+        dado = renpy.random.randint(1, 100)
 
         if dado <= probabilidad:
             return True
@@ -50,6 +66,8 @@ init python:
 
         global sanidad
 
+        # TODO: las expresiones "aterrado" y "aterrado_2" (recursos.rpy) no estan en esta tabla, hay que decidir cuanto restan
+        # (algo entre asustado -10 y aterrorizado -20) y agregarlas aqui.
         valores = {
             "incomodo": 2,
             "nervioso": 5,
@@ -62,6 +80,7 @@ init python:
 
         sanidad = max(0, sanidad)
 
+# TODO: miedo() todavia no se llama en script.rpy. Los lugares donde se debe llamar estan marcados con "# TODO miedo(...)" al lado de cada expresion.
 #### EJEMPLO DE USO DE CODIGO: ####
 
 # Normalidad = 60

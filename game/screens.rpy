@@ -248,6 +248,7 @@ screen quick_menu():
 
             textbutton _("Atrás") action Rollback()
             textbutton _("Historial") action ShowMenu('history')
+            textbutton _("Inventario") action ToggleScreen("inventory")
             textbutton _("Saltar") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Guardar") action ShowMenu('save')
@@ -1536,6 +1537,7 @@ screen quick_menu():
             style_prefix "quick"
 
             textbutton _("Atrás") action Rollback()
+            textbutton _("Inventario") action ToggleScreen("inventory")
             textbutton _("Saltar") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Menú") action ShowMenu()
